@@ -1,0 +1,10 @@
+baseURL = "sun20121818.github.io/"
+languageCode = "en-uk"
+title = "奇趣"
+theme = "hyde"
+disqusShortname = "spf13"
+
+[params]
+	description = "发现生活中的乐趣"
+	themeColor = "theme-base-08"
+	disqusShortname = "spf13"

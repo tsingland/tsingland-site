@@ -1,27 +1,28 @@
 sudo: true
 dist: trusty
 language:
-  - go
+- go
 os: osx
-
 go:
-  - master
+- master
 before_script:
-  - brew install hugo
+- brew install hugo
 script:
-  - sh scripts/ci-build.sh
-
+- sh scripts/ci-build.sh
 after_success:
-  - git config --global user.email "1184550842@qq.com"
-  - git config --global user.name "sunlin"
-  - cd public
-  - git add -A
-  - git commit -m 'Travis upate blog'
-  - git push -u origin master
-  - ls
-  - pwd
-  
+- git config --global user.email "1184550842@qq.com"
+- git config --global user.name "sunlin"
+- cd public
+- git add -A
+- git commit -m 'Travis upate blog'
+- git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
+- ls
+- pwd
 notifications:
   email:
     recipients:
-      - 1184550842@qq.com
+    - 1184550842@qq.com
+env:
+  global:
+    GH_REF: github.com/tsingland/tsingland.github.io.git
+    secure: hYYyx1ApC50CcO9K/2ZIztZhhPrF2ADxpWm4NCVMOJcafaKXyVAst9PRlcC9LfkZKkBDF7G/D/keIXDZI3QqOjxIYu2jl35lXi6I0B4Uyjmri7dudt5ZyRYf2SqlbfRQhXbMiHQJ+x+2Xhb0+XRtTTb1eEnrlxLxCDbZrWFYQUYoPASoSVhejXGyBiFqRv+67aLedGI30bD/Dp6TcmsrDgtnxaF1WlF4jEy6xoNHGobVov2ycYojPQabFK+xCNlRVMu6YT1sF2ZXUHP+V5pp/d0AtdJ7Aa/+TwKMiRrAiM60C9KRVz+PhupFquvvArBW9J0fOaVCtIjCxxatQH3463HK2whGSW6RsAP1KiWM33xycNfBpK8pWO6pSC6iL8fHPugvneYew0mJCAX86/jGLsdy6lShFSvuniehR0TbAXxk5uDPzfYnoq4CgcCukEL0gODWaUt3yrxwB/z7hcol3I0QwsbpnQa2W+OlpyNOg+UB21/RB43tynR5hf3M26ccq+9y6fDNRSlUAWds9nng34OAcP3fRGtg3hdZQ4pLq1pOco6aWx649ztkMQzq99y5qZ1mOZVzYWmF3K+RQX+oZwcebmxsRUI0DdCD8MWDnfjKgGjDh5HSYKbcLkhuxXh5XqmEkx9u5UnDwwuWPw634/VYL/wSgJlhuAKOmQIxz+4=

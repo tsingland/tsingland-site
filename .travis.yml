@@ -10,3 +10,16 @@ before_script:
   - brew install hugo
 script:
   - sh scripts/ci-build.sh
+
+after_success:
+  - git config --global user.email "1184550842@qq.com"
+  - git config --global user.name "sunlin"
+  - cd public
+  - git add -A
+  - git commit -m 'Travis upate blog'
+  - git push -u origin master
+  
+notifications:
+  email:
+    recipients:
+      - 1184550842@qq.com

@@ -18,6 +18,8 @@ after_success:
   - git add -A
   - git commit -m 'Travis upate blog'
   - git push -u origin master
+  - ls
+  - pwd
   
 notifications:
   email:

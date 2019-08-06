@@ -7,6 +7,6 @@ os: linux
 go:
   - master
 before_script:
-  - apt-get install hugo
+  - sudo apt-get install hugo
 script:
   - ./scripts/ci-build.sh

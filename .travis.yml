@@ -2,12 +2,11 @@ sudo: true
 dist: trusty
 language:
   - go
-os: linux
+os: osx
 
 go:
   - master
 before_script:
-  - sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
-  - sudo brew install hugo
+  - brew install hugo
 script:
   - ./scripts/ci-build.sh

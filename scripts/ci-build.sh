@@ -1,3 +1,3 @@
 #!/bin/sh
 
-hugo -t hyde
+hugo --theme=hyde --baseUrl=https://tsingland.github.io/

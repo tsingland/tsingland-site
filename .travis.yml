@@ -16,13 +16,11 @@ after_success:
 - git add -A
 - git commit -m 'Travis upate blog'
 - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
-- ls
-- pwd
 notifications:
   email:
     recipients:
     - 1184550842@qq.com
 env:
   global:
-    GH_REF: github.com/tsingland/tsingland.github.io.git
-    secure: hYYyx1ApC50CcO9K/2ZIztZhhPrF2ADxpWm4NCVMOJcafaKXyVAst9PRlcC9LfkZKkBDF7G/D/keIXDZI3QqOjxIYu2jl35lXi6I0B4Uyjmri7dudt5ZyRYf2SqlbfRQhXbMiHQJ+x+2Xhb0+XRtTTb1eEnrlxLxCDbZrWFYQUYoPASoSVhejXGyBiFqRv+67aLedGI30bD/Dp6TcmsrDgtnxaF1WlF4jEy6xoNHGobVov2ycYojPQabFK+xCNlRVMu6YT1sF2ZXUHP+V5pp/d0AtdJ7Aa/+TwKMiRrAiM60C9KRVz+PhupFquvvArBW9J0fOaVCtIjCxxatQH3463HK2whGSW6RsAP1KiWM33xycNfBpK8pWO6pSC6iL8fHPugvneYew0mJCAX86/jGLsdy6lShFSvuniehR0TbAXxk5uDPzfYnoq4CgcCukEL0gODWaUt3yrxwB/z7hcol3I0QwsbpnQa2W+OlpyNOg+UB21/RB43tynR5hf3M26ccq+9y6fDNRSlUAWds9nng34OAcP3fRGtg3hdZQ4pLq1pOco6aWx649ztkMQzq99y5qZ1mOZVzYWmF3K+RQX+oZwcebmxsRUI0DdCD8MWDnfjKgGjDh5HSYKbcLkhuxXh5XqmEkx9u5UnDwwuWPw634/VYL/wSgJlhuAKOmQIxz+4=
+  - GH_REF: github.com/tsingland/tsingland.github.io.git
+  - secure: pMWSg4yA5ZhZD1g97DGV3ozGWOKEUxRTre5iXpaDmL93xA8EBOewUpzF8x6qmzMmllh2gg0Tglwz7z+xwApzSntM5rERqkgZS4Rt4luruG/AVWXyMTDy8f4HCcHVb/hD2Ui7DO0zZ0frDun+t8DM8hBON8Iv4fuzt049RWdB5h7114iuIyY2G3sZkxFyKe0SOhWBZn0wPLUSEGJXDEEGPbk6O/dkJdauhpVzyRVM9ufOV6lfibqTu0hocSt0oEgLmk7Q+eMmN9WssB5B8ZTPOYOVLyCO23ku3qaKPCW9bSjQS6T977PAil6BwDJaeLyvvJnOrYtBteJDTT8WsNyL3gehGTiq2BFHDPddUygetpy5i7FQo22aXfAkChT08b7yKnLQyBdHskjuA+m+zg7FCNOPEZpZPaVv/3Y2qjlNlbUtRwO3KGVSAZZAenXDhzJKto6U1DPGD2L4Ps1W6PGV6L+HIpH8p9jjO0JL5XM95puoiZbLoKQ8welLWhu1WHTuyQMqFxEU2kEJ7tn9PKFXmWGAWerJYXXtuzQa4Q5cTRgrMqdEBE9LNXvJJwrszTTTaTJ74qFa1VyG0geALMDKn02sQ1i9X5dmyHkbnITWoYOpJpxqsZErRAHJReax94kdpml2ywaQ1wZftG8cPqcO9k1uBx52w+ZmNjprRWvxxvQ=

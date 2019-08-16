@@ -8,7 +8,7 @@ go:
 before_script:
 - brew install hugo
 script:
-- hugo --theme=hyde --baseUrl=https://tsingland.github.io
+- hugo --baseUrl=https://tsingland.github.io
 after_success:
 - git config --global user.email "1184550842@qq.com"
 - git config --global user.name "sunlin"

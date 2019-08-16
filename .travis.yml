@@ -1,12 +1,10 @@
-sudo: true
-dist: trusty
+dist: bionic
 language:
 - go
-os: osx
 go:
 - master
 before_script:
-- brew install hugo
+- sudo apt-get install hugo
 script:
 - hugo --baseUrl=https://tsingland.github.io
 after_success:

@@ -7,14 +7,7 @@ before_script:
 - sudo apt-get install hugo
 script:
 - hugo --baseUrl=https://tsingland.github.io
-after_success:
-- git config --global user.email "1184550842@qq.com"
-- git config --global user.name "sunlin"
-- cd public
-- git init
-- git add .
-- git commit -m 'Travis upate blog'
-- git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
+
 notifications:
   email:
     recipients:
@@ -23,3 +16,15 @@ env:
   global:
   - GH_REF: github.com/tsingland/tsingland.github.io.git
   - secure: pMWSg4yA5ZhZD1g97DGV3ozGWOKEUxRTre5iXpaDmL93xA8EBOewUpzF8x6qmzMmllh2gg0Tglwz7z+xwApzSntM5rERqkgZS4Rt4luruG/AVWXyMTDy8f4HCcHVb/hD2Ui7DO0zZ0frDun+t8DM8hBON8Iv4fuzt049RWdB5h7114iuIyY2G3sZkxFyKe0SOhWBZn0wPLUSEGJXDEEGPbk6O/dkJdauhpVzyRVM9ufOV6lfibqTu0hocSt0oEgLmk7Q+eMmN9WssB5B8ZTPOYOVLyCO23ku3qaKPCW9bSjQS6T977PAil6BwDJaeLyvvJnOrYtBteJDTT8WsNyL3gehGTiq2BFHDPddUygetpy5i7FQo22aXfAkChT08b7yKnLQyBdHskjuA+m+zg7FCNOPEZpZPaVv/3Y2qjlNlbUtRwO3KGVSAZZAenXDhzJKto6U1DPGD2L4Ps1W6PGV6L+HIpH8p9jjO0JL5XM95puoiZbLoKQ8welLWhu1WHTuyQMqFxEU2kEJ7tn9PKFXmWGAWerJYXXtuzQa4Q5cTRgrMqdEBE9LNXvJJwrszTTTaTJ74qFa1VyG0geALMDKn02sQ1i9X5dmyHkbnITWoYOpJpxqsZErRAHJReax94kdpml2ywaQ1wZftG8cPqcO9k1uBx52w+ZmNjprRWvxxvQ=
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GH_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep_history: true
+  on:
+    branch: master
+  local_dir: public
+  repo:tsingland/tsingland.github.io
+  email:1184550842@qq.com
+  name:sun

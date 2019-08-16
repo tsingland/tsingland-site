@@ -1,3 +1,3 @@
 #!/bin/bash
 
-hugo --theme=hyde --baseUrl=https://tsingland.github.io/
+hugo --theme=hyde --baseUrl=https://tsingland.github.io

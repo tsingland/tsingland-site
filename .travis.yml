@@ -4,7 +4,7 @@ language:
 go:
 - master
 before_script:
-- sudo apt-get install hugo
+- brew install hugo
 script:
 - sh scripts/ci-build.sh
 

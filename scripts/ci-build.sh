@@ -13,7 +13,7 @@ function gitConfig() {
 }
 
 # commit tsingland
-function commit() {
+function commitSite() {
 
     cd public
     git init
@@ -26,7 +26,7 @@ function commit() {
 function main() {
     genSite
     gitConfig
-    commit
+    commitSite
 }
 
 main

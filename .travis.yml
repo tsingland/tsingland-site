@@ -1,10 +1,12 @@
-os:osx
 language:
 - go
 go:
 - master
+os:
+- osx
 before_script:
 - brew install hugo
+
 script:
 - sh scripts/ci-build.sh
 
@@ -12,6 +14,7 @@ notifications:
   email:
     recipients:
     - 1184550842@qq.com
+
 env:
   global:
   - GH_REF: github.com/tsingland/tsingland.github.io.git

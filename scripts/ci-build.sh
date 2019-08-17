@@ -3,7 +3,11 @@
 
 # git config
 function genSite() {
-    hugo --theme=hyde --baseUrl=https://tsingland.github.io/
+    if [ -d blog ]
+        then
+        rm blog/*
+    fi
+    hugo -d blog
 }
 
 
@@ -15,7 +19,7 @@ function gitConfig() {
 # commit tsingland
 function commitSite() {
 
-    cd public
+    cd blog
     git init
     git add .
     git commit -m "Update by travis"

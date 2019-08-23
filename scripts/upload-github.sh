@@ -11,7 +11,8 @@ function genSite() {
 }
 
 function pushGithub() {
-
+    pwd
+    sleep 2
     cd blog
     git add -A
 

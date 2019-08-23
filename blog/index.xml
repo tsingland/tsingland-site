@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>奇趣</title>
-    <link>sun20121818.github.io/</link>
+    <link>tsingland.github.io/</link>
     <description>Recent content on 奇趣</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
     <lastBuildDate>Sat, 03 Aug 2019 12:42:20 +0800</lastBuildDate>
     
-	<atom:link href="sun20121818.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="tsingland.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>家庭存储中心</title>
-      <link>sun20121818.github.io/post/first/</link>
+      <link>tsingland.github.io/post/first/</link>
       <pubDate>Sat, 03 Aug 2019 12:42:20 +0800</pubDate>
       
-      <guid>sun20121818.github.io/post/first/</guid>
+      <guid>tsingland.github.io/post/first/</guid>
       <description>荣耀路由pro2 seafile 搭建私有云 seafile 国内领先的开源私有云提供商，类似于百度云盘，可以自己搭建服务器。 seafile 官网
 总体架构 由于树莓派 USB 接口供电功率有限，所以为了使移动硬盘长期稳定的工作，不能将移动硬盘直接连接到树莓派 USB 接口上。 荣耀路由pro2配备12V 大功率电源，足以满足移动硬盘的供电需求。因此我们将移动硬盘挂载到荣耀路由pro2 上。树莓派 通过网线连接到路由器局域网口。移动硬盘作为网盘挂载到树莓派指定目录。并作为移动硬盘后端存储。
 方案特点  低功耗 高效存储 低成本  荣耀和树莓派组成局域网 荣耀路由中的存储禁止外网对其进行访问。所以树莓派不能作为 wan 口设备。
@@ -25,10 +25,10 @@
     
     <item>
       <title>捐赠</title>
-      <link>sun20121818.github.io/donate/</link>
+      <link>tsingland.github.io/donate/</link>
       <pubDate>Thu, 01 Aug 2019 17:06:16 +0800</pubDate>
       
-      <guid>sun20121818.github.io/donate/</guid>
+      <guid>tsingland.github.io/donate/</guid>
       <description>本网站主要目的，发现有意思的技术，改变生活。如果您认为本网站有帮助，欢迎进行捐助
 支付宝支付 微信支付</description>
     </item>

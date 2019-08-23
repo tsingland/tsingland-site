@@ -5,7 +5,7 @@
 function genSite() {
     if [ -d blog ]
         then
-        rm blog/*
+        rm -Rf blog/*
     fi
     hugo -d blog
 }

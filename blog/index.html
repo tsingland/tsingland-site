@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-uk" lang="en-uk">
+<head>
+  <link href="//gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.56.3" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>奇趣</title>
+
+  
+  <link type="text/css" rel="stylesheet" href="sun20121818.github.io/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="sun20121818.github.io/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="sun20121818.github.io/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="sun20121818.github.io/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  <link href="sun20121818.github.io/index.xml" rel="alternate" type="application/rss+xml" title="奇趣" />
+  
+</head>
+
+  <body class="theme-base-08 ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="sun20121818.github.io/"><h1>奇趣</h1></a>
+      <p class="lead">
+       发现生活中的乐趣 
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="sun20121818.github.io/">Home</a> </li>
+        
+      </ul>
+    </nav>
+
+    <p>&copy; 2019. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="posts">
+<article class="post">
+  <h1 class="post-title">
+    <a href="sun20121818.github.io/post/first/">家庭存储中心</a>
+  </h1>
+  <time datetime="2019-08-03T12:42:20&#43;0800" class="post-date">Sat, Aug 3, 2019</time>
+  荣耀路由pro2 seafile 搭建私有云 seafile 国内领先的开源私有云提供商，类似于百度云盘，可以自己搭建服务器。 seafile 官网
+总体架构 由于树莓派 USB 接口供电功率有限，所以为了使移动硬盘长期稳定的工作，不能将移动硬盘直接连接到树莓派 USB 接口上。 荣耀路由pro2配备12V 大功率电源，足以满足移动硬盘的供电需求。因此我们将移动硬盘挂载到荣耀路由pro2 上。树莓派 通过网线连接到路由器局域网口。移动硬盘作为网盘挂载到树莓派指定目录。并作为移动硬盘后端存储。
+方案特点  低功耗 高效存储 低成本  荣耀和树莓派组成局域网 荣耀路由中的存储禁止外网对其进行访问。所以树莓派不能作为 wan 口设备。
+挂载honorrouterpro2 中硬盘到树莓派 sudo mount -t cifs -o user=sun,password=123,vers=1.0 //192.168.3.1/Seagate_usb1_1 /opt/honordisk  使用荣耀路由pro2 和树莓派3搭建seafile  开机自动挂载硬盘到 /opt/honordisk 目录 建立seafile-data 到 /opt/honordisk 软连接 ln -s /opt/honordisk/seafile-data /opt/haiwen/seafile-data  移动硬盘在树莓派上的挂载目录：/opt/honordisk seafile 后端存储位置: /opt/haiwei/seafile-data
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="sun20121818.github.io/donate/">捐赠</a>
+  </h1>
+  <time datetime="2019-08-01T17:06:16&#43;0800" class="post-date">Thu, Aug 1, 2019</time>
+  本网站主要目的，发现有意思的技术，改变生活。如果您认为本网站有帮助，欢迎进行捐助
+支付宝支付 微信支付
+  
+</article>
+</div>
+    </main>
+
+    
+  </body>
+</html>

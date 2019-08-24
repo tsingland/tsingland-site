@@ -14,6 +14,7 @@ function pushGithub() {
     pwd
     sleep 2
     cd blog
+    git init
     git add -A
 
     git commit -m "upload github by hand"

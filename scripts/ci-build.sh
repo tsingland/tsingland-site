@@ -7,7 +7,7 @@ function genSite() {
         then
         rm blog/*
     fi
-    hugo -d blog
+    hugo -d blog  --theme=hyde --baseUrl=https://tsingland.github.io/
 }
 
 
